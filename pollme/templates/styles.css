@@ -1,0 +1,132 @@
+.btn-group button {
+    background-color: #4CAF50; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    margin: 1px 1px;
+    padding: 1px 2px;
+    height: 300px;
+    width: 300px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left;
+}
+
+
+}
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #3e8e41;
+}
+a {
+  font-size: 100px;
+  color: yellow;
+
+}
+
+body {
+      background-image: url("granit.jpg");
+    }
+
+    /* Add a black background color to the top navigation */
+    .topnav {
+        background-color: #333;
+        overflow: hidden;
+    }
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    /* Change the color of links on hover */
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    /* Add a color to the active/current link */
+    .topnav a.active {
+        background-color: #4CAF50;
+        color: white;
+    }
+    .checked {
+        color: orange;
+    }
+
+    /* Star Stuff */
+* {
+
+padding:0;
+
+margin:0;
+
+list-style:none;
+
+}
+
+ul.rating{
+
+background:url(C:\Users\gij0\Desktop\Gio\Img\STAR.png) bottom;
+
+height:21px;
+
+width:115px;
+
+overflow:hidden;
+
+}
+
+ul.rating li{
+
+display:inline
+
+}
+
+.rating a {
+
+display:block;
+
+width:23px;
+
+height:21px;
+
+float:left;
+
+text-indent:-9999px;
+
+position:relative;
+
+}
+
+.rating a:hover {
+
+background:url(C:\Users\gij0\Desktop\Gio\Img\STAR.png) center;
+
+width:115px;
+
+margin-left:-92px;
+
+position:static;
+
+}
+
+.rating a:active {
+
+background-position:top;
+
+}

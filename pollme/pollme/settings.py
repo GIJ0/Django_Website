@@ -49,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+X_FRAME_OPTIONS = 'ALLOW-FROM r/https://www.twitch.tv/'
 
 ROOT_URLCONF = 'pollme.urls'
 

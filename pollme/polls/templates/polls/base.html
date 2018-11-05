@@ -1,154 +1,18 @@
-<html>
-<head>
-          <form method="post" action="connect.php">
-            url : <input type="text" name="url"><br><br>
-          character : <select name="character">
-                          <option value="Mario">Mario</option>
-                          <option value="Donkey Kong">Donkey Kong</option>
-                          <option value="link">Link</option>
-                          <option value="Samus">Samus</option>
-                          <option value="Dark Samus">Dark Samus</option>
-                          <option value="Yoshi">Yoshi</option>
-                          <option value="Kirby">Kirby</option>
-                          <option value="Fox">Fox</option>
-                          <option value="Pikachu">Pikachu</option>
-                          <option value="Luigi">Luigi</option>
-                          <option value="Ness">Ness</option>
-                          <option value="Captain Falcon">Captian Falcon</option>
-                          <option value="Jiggly Puff">Jiggly Puff</option>
-                          <option value="Peach">Peach</option>
-                          <option value="Daisy">Daisy</option>
-                          <option value="Bowser">Bowser</option>
-                          <option value="Ice Climbers">Ice Climbers</option>
-                          <option value="Sheik">Sheik</option>
+<!DOCTYPE html>
 
-                          <option value="Zelda">Zelda</option>
+<html lang="en">
+    <head>
+        <title>Pollme | Home</title>
 
-                          <option value="DR. Mario">DR. Mario</option>
-
-                          <option value="Pichu">Pichu</option>
-                          <option value="Falco">Falco</option>
-                          <option value="Marth">Marth</option>
-                           <option value="Lucina">Lucina</option>
-                           <option value="Young Link">Young Link</option>
-                         <option value="Ganondorf">Ganondorf</option>
-                          <option value="MewTwo">MewTwo</option>
-                          <option value="Roy">Roy</option>
-                          <option value="Chrom">Chrom</option>
-                           <option value="MR. GAME & WATCH">MR. GAME & WATCH</option>
-                          <option value="Meta Knight">Meta Knight</option>
-                          <option value="Pit">Pit</option>
-                          <option value="Dark Pit">Dark Pit</option>
-                          <option value="Zero Suit Samus">Zero Suit Samus</option>
-                          <option value="Wario">Wario</option>
-                          <option value="Snake">Snake</option>
-                          <option value="Ike">Ike</option>
-                          <option value="Pokemon Trainer">Pokemon Trainer</option>
-                          <option value="Diddy Kong">Diddy Kong</option>
-                          <option value="Lucas">Lucas</option>
-                          <option value="Sonic">Sonic</option>
-                          <option value="King DeDeDe">King DeDeDe</option>
-                          <option value="Olimar">Olimar</option>
-                          <option value="Lucario">Lucario</option>
-                          <option value="R.O.B">R.O.B</option>
-                          <option value="Toon Link">Toon Link</option>
-                          <option value="Wolf">Wolf</option>
-                          <option value="Villager">Villager</option>
-                          <option value="Mega Man">Mega Man</option>
-                          <option value="Wii Fit Trainer">Wii Fit Trainer</option>
-                          <option value="Rosalina & Luma">Rosalina & Luma/option>
-                          <option value="Little Mac">Little Mac</option>
-                          <option value="Greninija">Greninja</option>
-                          <option value="Mii">Mii</option>
-                          <option value="Palutena">Palutena</option>
-                          <option value="Pac-Man">Pac-Man</option>
-                          <option value="Robin">Robin</option>
-                          <option value="Shulk">Shulk</option>
-                          <option value="Bowser JR.">Bowser JR.</option>
-                          <option value="Duck Hunt">Duck Hunt</option>
-                          <option value="Ryu">Ryu</option>
-                          <option value="Cloud">Cloud</option>
-                          <option value="Bayonetta">Bayonetta</option>
-                          <option value="Inkling">Inkling</option>
-                          <option value="Ridley">Ridley</option>
-                          <option value="Simon">Simon</option>
-                          <option value="Richter">Richter</option>
-                          <option value="King K. Rool">King K. Rool</option>
-                          <option value="Isabelle">Isabelle</option>
+    </head>
 
 
+    <body>
+    <p>This is from base . html </p>
+    {% block content %}
 
+    <h1> This Tag will replace any content with the BlockContent tags </h1>
+    {% endblock %}
+    </body>
 
-
-                        </select>
-          GameVersion : <select name="GameVersion">
-                            <option value="Smash 64">Smash 64</option>
-                            <option value="Melee">Melee</option>
-                            <option value="Brawl">Brawl</option>
-                            <option value="wii U">Wii U</option>
-                            <option value="Ultimate">Ultimate</option>
-                        </select>
-          SmashTag : <input type="text" name="Smash Tag"><br><br>
-    <!--      Region : <select name="Region">
-                      <optgroup value="East Coast ">
-                        <option value="Delaware">Delaware</option>
-                        <option value="Maryland">Maryland</option>
-                        <option value="DC">DC</option>
-                        <option value="Virginia">Virginia</option>
-                        <option value="New Egland">New Egland</option>
-                        <option value="New Jersey">New Jersey</option>
-                        <option value="New York">New York</option>
-                        <option value="MDVA">Pennsylvania</option>
-                        <option value="MDVA">Pittsburg</option>
-                        <option value="North Ohio">North Ohio</option>
-                        <option value="Maine">Maine</option>
-
-                      <optgroup value="West Coast">
-                        <option value="SoCal">SoCal</option>
-                        <option value="NorCal">NorCal</option>
-
-                      <optgroup value="Midwest">
-                        <option value="Illinois">Illinois</option>
-                        <option value="Indiana">Indiana</option>
-                        <option value="Iowa">Iowa</option>
-                        <option value="Kansas">Kansas</option>
-                        <option value="Ohio">Ohio</option>
-                        <option value="Kentucky">Kentucky</option>
-                        <option value="Michigan">Michiagan</option>
-                        <option value="Missouri">Missouri</option>
-                        <option value="South Dakota">South Dakota</option>
-                        <option value="North Dakota">North Dakota</option>
-                        <option value="Nebraska">Nebraska</option>
-
-                      <optgroup value="SouthWest">
-                        <option value="Arizona">Arizona</option>
-                        <option value="Colorado">MDVA</option>
-                        <option value="Texas">Texas</option>
-                        <option value="Utah">Utah</option>
-                        <option value="New Mexicao">New Mexico</option>
-
-
-
-                      <optgroup value="Pacific West">
-
-                      <optgroup value="Canada">
-
-                      <optgroup value="Eroupe">
-
-                      <optgroup value="Central and South America">
-
-                      <optgroup value="Iternational Comunity">
-
-
- -->
-                    <input type="submit" value="Submit">
-               </select>
-             </form>
-
-</head>
-<body>
-
-
-
-</body>
 </html>

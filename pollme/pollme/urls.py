@@ -11,9 +11,9 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('time/', views.current_datetime),
-    path('home/', views.home),
+    path('', views.home, name="home"),
     path('submit/', views.submit),
-    path('polls/', include('polls.urls'))
+    path('polls/', include('polls.urls', namespace='polls'))
+
 ]
 

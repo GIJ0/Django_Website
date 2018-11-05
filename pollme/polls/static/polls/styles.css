@@ -1,0 +1,19 @@
+h3 {
+   color: red;
+}
+
+main {
+    background-image: url('../img/granit.jpeg');
+}
+
+p1{
+    color: yellow;
+}
+
+
+    .navbar-vote{
+        float:none;
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+    }

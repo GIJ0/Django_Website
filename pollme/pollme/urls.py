@@ -13,7 +13,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name="home"),
     path('submit/', views.submit),
-    path('polls/', include('polls.urls', namespace='polls'))
+    path('polls/', include('polls.urls', namespace='polls')),
+    path('N64/', views.N64),
 
 ]
 

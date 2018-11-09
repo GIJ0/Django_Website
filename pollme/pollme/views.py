@@ -8,3 +8,6 @@ def home(request):
 def submit(requst):
     return render(requst, 'submitpage.html')
 
+def N64(request):
+    return render(request, 'layout_N64.html')
+

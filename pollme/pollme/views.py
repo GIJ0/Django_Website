@@ -11,3 +11,6 @@ def submit(requst):
 def N64(request):
     return render(request, 'layout_N64.html')
 
+def stages(request):
+    return render(request, 'stages.html')
+

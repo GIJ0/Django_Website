@@ -9,14 +9,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
    <link rel='stylesheet' type='text/css' href="{% static 'polls/styles.css' %}">
-    <title>ND7.org</title>
+    <title>CHOWDER</title>
   </head>
   <body>
 
 
- <h1>N D 7.💣R G</h1>
+ <h1>PROJECT: N D 7  </h1>
 
- <h3>Your Voice Matters!</h3>
  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +30,7 @@
                                     <a class="nav-link" href="\submit\">Submit a combo</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a class="nav-link" href="{% url 'polls:list' %}">Archive</a>
+                                    <a class="nav-link" href="{% url 'polls:list' %}">Lessons</a>
                                   </li>
                                   <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -69,7 +68,7 @@
       <p1>country</p1>
     </div>
     <div class="col">
-      <p><iframe width="560" height="315" src="https://www.youtube.com/embed/pD_imYhNoQ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+      <p><iframe width="560" height="315" src="{{ iframe_url }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
     </div>
     <div class="col">
       <p1>picture</p1>
@@ -90,117 +89,6 @@
 
 
 
-      <div class="album py-5 bg-light">
-        <div class="container">
-
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <form method="get" action="#"><button type="submit"><img src="../static/img/Ultimate/ID_1_Mario.png"/img/layout_N64/Luigi.png"></button></form>
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
 
  </main>
 
@@ -214,57 +102,10 @@
 
 
 <footer>
-     <div class="btn-group">
+     <div class="container">
             <form method="get" action="#">
                 <button type="submit"><img src="../static/img/layout_N64/Luigi.png"/img/layout_N64/Luigi.png" height="300" width="300"></button>
             </form>
 
-            <form method="get" action="C:\Users\gij0\Desktop\Gio\Characters\Mario.html">
-                <button type="submit"><img src="../static/img/layout_N64/Mario.png" height="300" width="300"/></button>
-            </form>
 
-            <form method="get" action="C:\Users\gij0\Desktop\Gio\Characters\DK.html">
-                <button type="submit"><img src="../static/img/layout_N64/Dk.png" height="300" width="300"/></button>
-            </form>
-
-            <form method="get" action="C:\Users\gij0\Desktop\Gio\Characters\Link.html">
-                <button type="submit"><img src="../static/img/layout_N64/Link.png" height="300" width="300"></button>
-            </form>
-
-            <form method="get" action="C:\Users\gij0\Desktop\Gio\Characters\Samus.html">
-              <button type="submit"><img src="../static/img/layout_N64/Samus.png" height="300" width="300"></button>
-            </form>
-
-            <form method="get" action="C:\Users\gij0\Desktop\Gio\Characters\CF.html">
-              <button type="submit"><img src="../static/img/layout_N64/Captian Falcon.png"height="300" width="300"></button>
-            </form>
-
-            <form method="get" action="C:\Users\gij0\Desktop\Gio\Characters\Ness.html">
-              <button type="submit"><img src="../static/img/layout_N64/Ness.png" height="300" width="300"></button>
-            </form>
-
-            <form method="get" action="C:\Users\gij0\Desktop\Gio\Characters\Yoshi.html">
-              <button type="submit"><img src="../static/img/layout_N64/Yoshi.png" height="300" width="300"></button>
-            </form>
-
-            <form method="get" action="C:\Users\gij0\Desktop\Gio\Characters\Kirby.html">
-              <button type="submit"><img src="../static/img/layout_N64/Kirby.png" height="300" width="300"></button>
-            </form>
-
-            <form method="get" action="C:\Users\gij0\Desktop\Gio\Characters\Fox.html">
-              <button type="submit"><img src="../static/img/layout_N64/Fox.png" height="300" width="300"></button>
-            </form>
-
-            <form method="get" action="C:\Users\gij0\Desktop\Gio\Characters\Pikachu.html">
-              <button type="submit"><img src="../static/img/layout_N64/Pikachu.png" height="300" width="300"></button>
-            </form>
-
-            <form method="get" action="C:\Users\gij0\Desktop\Gio\Characters\Jiggly.html">
-              <button type="submit"><img src="../static/img/layout_N64/Jiggly.png" height="300" width="300"></button>
-            </form>
-
-        </div>
-
-      </body>
-</footer>
 </html>

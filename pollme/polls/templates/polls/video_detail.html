@@ -1,0 +1,33 @@
+{% include 'navbar.html' %}
+
+  <main>
+      {% block content %}
+      <h1><p1>Video Detail Page </p1></h1>
+
+        <p1> {{poll}} </p1>
+
+
+
+      <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/cFPeiTcA_lE?start=60&end=62&loop=1&autoplay=1&autoplay=1""" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></main>
+
+     <p1> {{poll}} </p1>
+      {% endblock %}
+
+   <form action="{% url 'polls:vote' poll.id %}" method="post">
+       {% csrf_token %}
+
+       {% for choice in poll.choice_set.all %}
+            <input type="radio"
+                   name="choice"
+                   id="choice{{ forloop.counter }}"
+                   value="{{choice.id}}"/>
+       <label for="choice{{ forloop.counter }}">{{choice.choice_text}}</label>
+       {% endfor %}
+       <br/>
+
+       <input type="submit" value="vote"/>
+   </form>
+
+
+  </main>
+  </body>

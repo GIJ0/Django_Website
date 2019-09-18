@@ -1,0 +1,8 @@
+Django==2.0.2
+django-braces==1.13.0
+django-iframetoolbox==0.2.1
+django-model-utils==3.1.2
+django-star-ratings==0.7.0
+pytz==2018.3
+swapper==1.1.0
+virtualenv==16.0.0
